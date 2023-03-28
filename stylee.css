@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1f242d;
+}
+
+.sosyal a {
+  position: relative;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  background: transparent;
+  box-shadow: 0 4px 4px rgb(gray);
+  margin: 0 8px;
+  text-decoration: none;
+  z-index: 1;
+  text-align: center;
+  line-height: 55px;
+  transition: 0.3s;
+}
+
+.sosyal a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: #929498;
+  z-index: -1;
+}
+.sosyal a:hover {
+  background: #0ef;
+  transform: rotate(135deg);
+  box-shadow: 0 0 5px #0ef, 0 0 10px #0ef;
+}
+
+.sosyal a i {
+  font-size: 18px;
+  color: #000;
+  transition: 0.3s;
+}
+
+.sosyal a:hover i {
+  color: #0ef;
+  transform: rotate(225deg);
+}
